@@ -1,7 +1,7 @@
 import './App.css';
 import BakeryItem from './components/BakeryItem';
 import filterList from './components/filterList';
-import Cart from './components/Favorites';
+import Favorites from './components/Favorites';
 import React, { useState, useEffect } from 'react';
 import Favorites from './components/Favorites';
 

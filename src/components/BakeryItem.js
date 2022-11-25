@@ -14,7 +14,7 @@ const BakeryItem = ({ products, selectFilterType, sortProducts, addToFavor }) =>
                 {
                     types.map((type) => {
                         return (
-                            <button className={"type"} value="reset" onClick={() => { setSort('reset'); sortProducts('reset'); selectFilterType(type);}}>{type}</button>
+                            <button className={"type"} value="reset" onClick={() => { setSort('reset'); sortProducts('reset'); selectFilterType(type); }}>{type}</button>
                         )
                     })
                 }
@@ -34,7 +34,7 @@ const BakeryItem = ({ products, selectFilterType, sortProducts, addToFavor }) =>
 
             </div>
             <div className="products">
-                <div><h3>Zhangyi's Bakery Shop</h3></div>
+                <div><h3>My Bakery Shop</h3></div>
                 <CardList products={products} addToFavor={addToFavor} />
             </div>
         </div>
