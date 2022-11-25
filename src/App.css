@@ -1,38 +1,146 @@
 .App {
-  text-align: center;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20% auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.row {
+  width: 1200px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  padding: 50px;
+}
+
+.products {
+  width: 80%;
+}
+
+.body {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  position: relative;
+}
+
+.type {
+  display: flex;
+  flex-wrap: nowrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 200px;
+  height: auto;
+  font-size: 20px;
+  background: white;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.type:hover {
+  background-color: orange;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.cardList {
+  display: flex;
+
+  flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px auto;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.name {
+  font-size: 18px;
+  margin: 10px;
+}
+
+.price {
+  margin: 5px;
+}
+
+.calories {
+  margin: 5px;
+}
+
+.description {
+  width: 250px;
+  height: auto;
+  margin: 0px
+}
+
+.image {
+  width: 250px;
+  height: auto;
+}
+
+.add {
+  padding: 10px;
+  width: 100%;
+  font-size: 20px;
+  background: black;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 0;
+}
+
+.add:hover {
+  background-color: orange;
+}
+
+.favorites {
+  margin-top: 50px;
+  margin-left: 920px;
+  margin-bottom: 20%;
+}
+
+.remove {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 1px;
+  width: 200px;
+  height: auto;
+  font-size: 20px;
+  background: white;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.remove:hover {
+  background-color: red;
+  color: white;
+}
+
+.remove-all {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 1px;
+  width: 200px;
+  height: auto;
+  font-size: 20px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.favorites p {
+  color: red;
 }
